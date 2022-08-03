@@ -1,0 +1,21 @@
+_id: req_wrk_3a5db650ae914963a001403a3695bac831003c6a
+type: Request
+parentId: wrk_3a5db650ae914963a001403a3695bac8
+modified: 1659540150365
+created: 1659540150365
+url: "{{ base_url }}/users"
+name: Accounts table
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1659540150365
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

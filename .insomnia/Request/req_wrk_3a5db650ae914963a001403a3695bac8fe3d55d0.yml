@@ -1,0 +1,30 @@
+_id: req_wrk_3a5db650ae914963a001403a3695bac8fe3d55d0
+type: Request
+parentId: wrk_3a5db650ae914963a001403a3695bac8
+modified: 1659540150364
+created: 1659540150364
+url: "{{ base_url }}/users"
+name: Create a new User
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "username": "bear",
+      "score": 55,
+      "active": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1659540150364
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

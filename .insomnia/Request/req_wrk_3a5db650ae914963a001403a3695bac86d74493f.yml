@@ -1,0 +1,30 @@
+_id: req_wrk_3a5db650ae914963a001403a3695bac86d74493f
+type: Request
+parentId: wrk_3a5db650ae914963a001403a3695bac8
+modified: 1659540150347
+created: 1659540150347
+url: "{{ base_url }}/users/{{ userId }}"
+name: update a user
+description: ""
+method: PATCH
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "username": "bear",
+      "score": 55,
+      "active": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1659540150347
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,22 @@
+_id: ut_265982331af5428fa3164855d049cd2d
+type: UnitTest
+parentId: uts_0a0a612818d849d1871c01a20f3a85e4
+modified: 1659541259167
+created: 1659540256559
+requestId: req_wrk_3a5db650ae914963a001403a3695bac831003c6a
+name: Returns 200
+code: |-
+  const response1 = await insomnia.send();
+  const body = JSON.parse(response1.data);
+  expect(response1.status).to.equal(200);
+
+  expect(response1.status).to.equal(200,"not 200");
+
+  const item = body[3];
+  expect(item).to.be.an('object');
+  expect(Object.keys(item)).to.have.length(4);
+  expect(item).to.have.property('id');
+  expect(item).to.have.property('username');
+  expect(item).to.have.property('score');
+  expect(item).to.have.property('active');
+  expect(item.username).to.equal('mike');
